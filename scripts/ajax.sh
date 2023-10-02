@@ -1,0 +1,12 @@
+ajax bolt launch --taskname=lm85m_test \
+    --module=mixture_general_lm \
+    --cfg=v1-85m \
+    --num_nodes=4 \
+    --num_gpus=8 \
+    --num_cpus=96 \
+    --memory_gb=128 \
+    --disk_gb=500 \
+    --scratchfs_gb=6000 \
+    --project_id=foundation_models \ 
+    --cluster=aws_1 \
+    --cluster_options=aws:instance_type:p4d.24xlarge
